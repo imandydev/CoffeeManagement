@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="DataBaseCoffee">
+  <DataContextMoniker Name="/DataBaseCoffeeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="990071dc-957d-4eac-94ab-47edd3775ce1" absoluteBounds="3.5, 4.375, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataBaseCoffeeDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="349f0c03-d3eb-4eae-96e5-32bceb814a04" absoluteBounds="3.515, 4.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3db8dadf-62e1-4ea6-a509-8e2625c73ef3" absoluteBounds="0.75, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataBaseCoffeeDataContext/FoodCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7a915b2-c608-47fa-8bed-9a50bbf7760f" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="015e08cd-624f-47a8-b3a0-bf77fd8845a5" absoluteBounds="0.75, 5.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataBaseCoffeeDataContext/AccountType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc80503f-7e4a-4346-bdff-d0727c6887bd" absoluteBounds="0.765, 5.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="917b34c8-5abc-40bb-afec-7cac6e197377" absoluteBounds="6.25, 4.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DataBaseCoffeeDataContext/Bill" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2567a40c-82ab-47a3-b43a-3bcde6cbd377" absoluteBounds="6.265, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21fafcc4-b762-4fdd-9657-917151b6e828" absoluteBounds="9, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataBaseCoffeeDataContext/BillInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdbe21d3-dc54-4b6a-a002-80b1518c3db0" absoluteBounds="9.015, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26eb5d40-0f4c-4002-a5ac-af71d77be30b" absoluteBounds="6.25, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataBaseCoffeeDataContext/detailFood" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e27d2a6-7596-4cc0-8196-569676dfa653" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea8f5a9b-85e6-4187-b878-44a93e48a4a4" absoluteBounds="3.5, 1, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/DataBaseCoffeeDataContext/Food" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36a348d7-6a1b-48e8-8c51-cbf24ba9ca86" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 5.72199625651042); (3.5 : 5.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataBaseCoffeeDataContext/AccountType/AccountType_Account" />
+      <nodes>
+        <classShapeMoniker Id="015e08cd-624f-47a8-b3a0-bf77fd8845a5" />
+        <classShapeMoniker Id="990071dc-957d-4eac-94ab-47edd3775ce1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.63544840494792); (6.25 : 5.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataBaseCoffeeDataContext/Account/Account_Bill" />
+      <nodes>
+        <classShapeMoniker Id="990071dc-957d-4eac-94ab-47edd3775ce1" />
+        <classShapeMoniker Id="917b34c8-5abc-40bb-afec-7cac6e197377" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 5.63544840494792); (10 : 5.63544840494792); (10 : 2.64589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataBaseCoffeeDataContext/Bill/Bill_BillInfo" />
+      <nodes>
+        <classShapeMoniker Id="917b34c8-5abc-40bb-afec-7cac6e197377" />
+        <classShapeMoniker Id="21fafcc4-b762-4fdd-9657-917151b6e828" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 1.76044840494792); (9 : 1.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataBaseCoffeeDataContext/detailFood/detailFood_BillInfo" />
+      <nodes>
+        <classShapeMoniker Id="26eb5d40-0f4c-4002-a5ac-af71d77be30b" />
+        <classShapeMoniker Id="21fafcc4-b762-4fdd-9657-917151b6e828" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.78929768880208); (6.25 : 1.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataBaseCoffeeDataContext/Food/Food_detailFood" />
+      <nodes>
+        <classShapeMoniker Id="ea8f5a9b-85e6-4187-b878-44a93e48a4a4" />
+        <classShapeMoniker Id="26eb5d40-0f4c-4002-a5ac-af71d77be30b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.81814697265625); (3.5 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataBaseCoffeeDataContext/FoodCategory/FoodCategory_Food" />
+      <nodes>
+        <classShapeMoniker Id="3db8dadf-62e1-4ea6-a509-8e2625c73ef3" />
+        <classShapeMoniker Id="ea8f5a9b-85e6-4187-b878-44a93e48a4a4" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
